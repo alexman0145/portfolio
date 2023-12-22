@@ -1,0 +1,21 @@
+name: Sync from Azure DevOps
+
+on:
+  push:
+    branches:
+      - main  # adaptez en fonction de votre configuration
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Sync from Azure DevOps
+        run: |
+          git remote add azure https://dev.azure.com/alexrigaud/Atelier%20S1/_git/portfolio%20site
+          git pull azure main
+          git push origin main
+
