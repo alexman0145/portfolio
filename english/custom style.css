@@ -1,0 +1,47 @@
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+}
+
+caption, td, tr {
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.col1 {
+    text-align: left;
+}
+
+.col2 {
+    height: 120px;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+.col3 {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-size: 10px;
+    width: 50px;
+    text-size-adjust: auto;
+}
+
+.col4 {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    font-size: 10px;
+    width: 50px;
+    text-size-adjust: auto;
+    text-align: left;
+}
+.scroll-table {
+    max-width: 100%; /* ajuster la taille de la barre de défilement*/
+    overflow-x: scroll; /* ajout du composant barre de défilement */
+    max-height: 400px;
+}
