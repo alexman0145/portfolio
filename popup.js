@@ -9,6 +9,7 @@ function ouvrirPopup() {
     popupDiv.style.backgroundColor = 'rgba(255, 255, 255)';
     popupDiv.style.textAlign = 'center';
     popupDiv.style.zIndex = '9999';
+    popupDiv.style.opacity = '0.75';
 
     // Contenu de la fenêtre pop-up
     var popupContent = "<p class='scrolling-text'>Pour la version en anglais du site</p>";
@@ -42,7 +43,7 @@ function ouvrirPopup() {
     // Deuxième bouton
     var linkButton = document.createElement('button');
     linkButton.innerHTML = 'Accèder à la page';
-    linkButton.style.fontFamily = 'Arial, sans-serif';
+    // linkButton.style.fontFamily = 'Arial, sans-serif';
     linkButton.style.color = 'red';
     linkButton.style.padding = '5px 20px';
     linkButton.style.border = '2px solid green';
